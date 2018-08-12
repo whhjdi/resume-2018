@@ -2,7 +2,7 @@
 {
   "scripts": {
     "dev": "webpack-dev-server --open --hot",
-    "pub": "set NODE_ENV=dev && webpack --config webpack-dist.config.js && rm -rf .public"
+    "pub": "webpack --config webpack.config.js"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
