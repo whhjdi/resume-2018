@@ -1,4 +1,3 @@
-
 {
   "scripts": {
     "dev": "webpack-dev-server --open --hot",
@@ -21,4 +20,3 @@
     "webpack-dev-server": "^2.7.1"
   }
 }
-
