@@ -2,11 +2,11 @@
 @import "../node_modules/compass-mixins/lib/compass/css3";
 
 $color-gray: #d1d1d1;
-$color-green: #00b38a;
+$color-green: #409eff;
 $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 * {
-  @include box-sizing(border-box);
+  box-sizing:border-box;
   user-select: none;
 }
 
@@ -31,7 +31,7 @@ body {
 a {
   text-decoration: none;
   color: $color-green;
-  @include transition(all .2s ease-in-out);
+  transition:all .2s ease-in-out;
 }
 
 .last-modified {
@@ -39,7 +39,7 @@ a {
   top: 30px;
   left: 50%;
   width: 1000px;
-  color: #bbb;
+  color: #666;
   margin-left: -500px;
   font-size: 12px;
   text-align: right;
@@ -55,7 +55,7 @@ a {
   position: absolute;
   top: 30px;
   left: 50%;
-  color: #bbb;
+  color: #666;
   margin-left: -500px;
   font-size: 12px;
   text-align: right;
@@ -71,14 +71,14 @@ a {
   position: relative;
   width: 1024px;
   margin: 50px auto;
-  @include border-radius(5px);
+  border-radius:5px;
   background-color: #fff;
-  box-shadow: 0 0 0 1px #eee;
+  // box-shadow: 0 0 0 1px #eee;
   overflow: hidden;
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin: 0;
-    @include border-radius(0);
+    border-radius:0;
   }
 }
 
@@ -270,7 +270,7 @@ a {
     min-width: 100px;
     margin: 0 auto;
     padding: 4px 10px;
-    @include border-radius(32px);
+    border-radius:32px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -321,7 +321,7 @@ a {
       font-size: 12px;
       line-height: 14px;
       border: 1px solid $color-gray;
-      @include border-radius(3px);
+      border-radius:3px;
       margin: 2px;
       padding: 0 3px;
       background-color: #f7f7f7;
@@ -331,7 +331,7 @@ a {
       font-size: 12px;
       line-height: 14px;
       border: 1px solid #f3f3f3;
-      @include border-radius(3px);
+      border-radius:3px;
       font-weight: 500;
       color: #444;
       margin: 2px;
@@ -362,19 +362,3 @@ a {
   }
 }
 
-.github-footer {
-  text-align: center;
-
-  .footer-link {
-    display: inline-block;
-    color: $color-gray;
-    margin-bottom: 25px;
-    @media screen and (max-width: 1024px) {
-      margin-top: 25px;
-    }
-  }
-
-  @media print {
-    display: none;
-  }
-}
